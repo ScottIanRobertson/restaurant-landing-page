@@ -1,0 +1,56 @@
+.menu {
+  padding-bottom: 8.1rem;
+  text-align: center;
+}
+
+h2 {
+  color: white;
+}
+
+.menu-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.menu-item {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 1.62rem;
+  padding: 1.62rem;
+  border-radius: 16.2px;
+  flex: 1 0 21%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  height: 162px; /* Adjust height as needed */
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  position: relative;
+  color: #fff; /* Text color for better readability on background image */
+}
+
+.menu-item::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text visibility */
+  border-radius: 5px;
+}
+
+.menu-item-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+.menu-item h3 {
+  margin: 0.5rem 0;
+}
+
+.menu-item p {
+  margin: 0.5rem 0 0;
+}

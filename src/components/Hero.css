@@ -1,0 +1,21 @@
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  padding-bottom: 8.1rem;
+}
+
+.hero-content {
+  text-align: center;
+}
+
+.btn {
+  background: #ff6347;
+  color: #fff;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  border-radius: 16.2px;
+  margin-top: 1rem;
+}
