@@ -2,7 +2,8 @@
   padding-bottom: 8.1rem;
   text-align: center;
   width: 48.6%;
-  margin: auto;
+  margin: 0 auto; /* Center with horizontal auto margin */
+  padding: 0 16.2px; /* Add padding to prevent content clipping */
 }
 
 .about h2 {
@@ -15,4 +16,11 @@
   color: white;
   background: #333;
   border-radius: 16.2px;
+}
+
+@media (max-width: 900px) {
+  .about {
+    width: auto;
+    padding: 0 8.1px; /* Adjust padding for small screens */
+  }
 }

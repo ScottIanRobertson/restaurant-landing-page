@@ -8,12 +8,13 @@ h2 {
 }
 
 .contact-info {
-  margin: auto;
+  margin: 0 auto; /* Centering with horizontal auto margin */
   width: 48.6%;
   background-color: #333;
   padding: 1.62rem;
   border-radius: 16.2px;
   margin-bottom: 4.05rem;
+  box-sizing: border-box; /* Ensure padding doesn't affect width */
 }
 
 .contact-info p {
@@ -24,12 +25,13 @@ h2 {
 .form-group {
   text-align: left;
   width: 48.6%;
-  margin: auto;
+  margin: 0 auto; /* Centering with horizontal auto margin */
+  box-sizing: border-box; /* Ensure padding doesn't affect width */
 }
 
 label {
   display: block;
-  margin: 0.81rem;
+  margin: 0.81rem 0;
   color: white;
   font-size: 1.62rem;
 }
@@ -40,6 +42,7 @@ textarea {
   padding: 0.81rem;
   border: 1.62px solid #ccc;
   border-radius: 4px;
+  box-sizing: border-box; /* Ensure padding doesn't affect width */
 }
 
 textarea {
@@ -61,4 +64,15 @@ button {
 
 button:hover {
   background-color: #c88604;
+}
+
+@media (max-width: 900px) {
+  .contact-info {
+    width: 100%;
+    padding: 1.62rem; /* Ensure padding on small screens */
+  }
+  .form-group {
+    width: 100%;
+    padding: 1.62rem; /* Ensure padding on small screens */
+  }
 }
